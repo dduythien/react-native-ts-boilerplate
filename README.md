@@ -1,28 +1,6 @@
-<img alt="React Native Typescript Boilerplate" src="assets/logo.png" width="1050"/>
+# RN start kit
 
-[![A lot of fundamental features with Typescript support React Native Boilerplate](https://img.shields.io/badge/-A%20lot%20of%20fundamental%20features%20with%20Typescript%20support%20React%20Native%20Boilerplate-orange?style=for-the-badge)](https://github.com/WrathChaos/react-native-typescript-boilerplate)
-
-[![npm version](https://img.shields.io/npm/v/react-native-typescript-boilerplate.svg?style=for-the-badge)](https://www.npmjs.com/package/@freakycoder/react-native-typescript-boilerplate)
-[![npm](https://img.shields.io/npm/dt/react-native-typescript-boilerplate.svg?style=for-the-badge)](https://www.npmjs.com/package/@freakycoder/react-native-typescript-boilerplate)
-![Platform - Android and iOS](https://img.shields.io/badge/platform-Android%20%7C%20iOS-blue.svg?style=for-the-badge)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
-[![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg?style=for-the-badge)](https://github.com/prettier/prettier)
-
-# 🥳 Version 1.0.0 is here 😍
-
-We're proudly announce that `Version 1.0.0` is here!
-
-- Better **built-in theming** support with React Navigation
-- Native Splash Screen
-- New React Native Architecture Ready **(RN 0.73+)** 🍻
-- Awesome Theme Support for both Light / Dark Mode 🌙
-- Latest `React` and `React Native` Dependencies 🌟
-- All Dependencies are **Upgraded**
-- New GIF with the Project Example for Theming
-- Much Better Documentation
-- Detailed Roadmap
-
-# 🐶 What's Included?
+# Stack
 
 - **Typescript**
 - **Flipper Ready**
@@ -31,8 +9,7 @@ We're proudly announce that `Version 1.0.0` is here!
   - [React Navigation Helpers](https://github.com/WrathChaos/react-navigation-helpers)
   - Ready to use Stack and Tab Screens with navigation
 - **NEW: Built-in Theme System with Hooks**
-  - ☀️ Light Theme Support
-  - 🌙 Dark Theme Support
+  - Switch theme
   - Dynamic Color Palette System
   - Custom Font Support
   - Built-in Better `Text` Component
@@ -72,48 +49,15 @@ We're proudly announce that `Version 1.0.0` is here!
 
 - **More and more! :)**
 
-# 🎯 Step By Step Guide
+# Step By Step Guide
 
 ## Clean-Up & Simple Run
 
 Clean up the files from the example repository and do not forget to install the dependencies
-There is a good example by default on `HomeScreen`. You can delete the all screens.
 
 - `npm i`
-- `npm run clean-up`
-- `npm i && npx pod-install`
-- `react-native run-ios/android`
-
-**OR**
-
-- `rm -rf .git README.md`
-- `rm -rf ./assets`
-- `npm i`
-- `npm run husky:setup`
 - `npx pod-install` (iOS Only)
 - `react-native run-ios/android`
-
-## Husky Integration
-
-Before doing anything else, please simply run the command to initalize the husky. If you do not run clean-up part you should run the husky setup by yourself
-
-```jsx
-npm run husky:setup
-```
-
-`husky:setup` will handle the initialization, installation and ready to use `commitlint`, `prettier` and `eslint`.
-
-## Rename the project: (Thanks to [react-native-name](https://github.com/junedomingo/react-native-rename))
-
-```sh
-npx react-native-rename <your-project-name>
-```
-
-> With custom Bundle Identifier (Android only. For iOS, please use Xcode)
-
-```sj
-npx react-native-rename <your-project-name> -b <bundleIdentifier>
-```
 
 ### Install Pods (iOS Only)
 
@@ -155,28 +99,3 @@ sdk.dir=/Users/username/Library/Android/sdk
 - [Axios Hooks](./docs/axios-hooks.md)
 - [Event Emitter Usage](./docs/event-emitter.md)
 - [Project Structure](./docs/project-structure.md)
-
-# 🔮 Roadmap
-
-- [x] ~~LICENSE~~
-- [x] ~~Better Husky: Linter, Prettier and Commintlint~~
-- [x] ~~Removal of `react-native-animated-splash-screen`~~
-- [x] ~~New Theme Support with React Navigation~~
-- [x] ~~Implement the native splash screen with [react-native-splash-screen](https://github.com/crazycodeboy/react-native-splash-screen)~~
-- [x] ~~Better and separated documentation~~
-- [x] ~~Axios Hooks~~
-- [x] ~~React Native New Architecture~~
-- [ ] `Babel Plugin Module Resolver` Documentation with Example
-- [ ] `Navigation Service` Documentation with Example
-- [ ] `Localization` Documentation with Example
-- [ ] `Theme` Documentation with Example
-- [ ] `FAQ` Documentation
-- [ ] `Website` for the boilerplate
-- [ ] Splash Screen Documentation
-- [ ] `Detox E2E` Integration Fork Version
-- [ ] Write an article about the lib on `Medium`
-- [ ] Write an article about the lib on `DevTo`
-
-## License
-
-React Native Typescript Boilerplate is available under the MIT license. See the LICENSE file for more info.
