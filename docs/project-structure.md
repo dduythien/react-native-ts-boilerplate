@@ -1,5 +1,3 @@
-<img alt="React Native Typescript Boilerplate" src="../assets/logo.png" width="1050"/>
-
 # 🍺 Project Structure
 
 ## File structure
@@ -11,17 +9,17 @@
 - `/ios` - native code specific to iOS
 - `/docs` - as the name suggests - any docs
 - `/src` - contains our JS and style code.
+  - `/navigation` - define routers
   - `/screens` - contains all screens/pages
   - `/services` - app-wide services
     - `/api` - generic network handling with API constants
     - `/event-emitter` - singleton event bus to use it everywhere in the project
-    - `/models` - generic models should lay here
-    - `/navigation` - navigation system lay here
   - `/shared` - whole app-wide shared
     - `/components` - app-wide shared components
     - `/constants` - app-wide shared constant variables
     - `/localization` - app-wide localization
     - `/theme` - app-wide theme which contains `color palette` and `fonts`
+  - `/stores` - redux state management
   - `/utils` - generic util functions
   - `index.js` - the starting place for our app
   - `App.tsx` - the main place for our app
@@ -32,6 +30,8 @@
 ├───android
 ├───ios
 ├───src
+│   ├───navigation
+│   │   └───index.tsx
 │   ├───screens
 │   │   ├───detail
 │   │   │   ├───DetailScreen.style.ts
@@ -50,16 +50,15 @@
 │   │       └───SearchScreen.tsx
 │   ├───services
 │   │   ├───api
-│   │   │   ├───api.constant.ts
+│   │   │   ├───auth.ts
+│   │   │   ├───dashboard.ts
 │   │   │   └───index.ts
-│   │   ├───event-emitter
-│   │   │   └───index.ts
-│   │   ├───models
-│   │   │   └───index.ts
-│   │   └───navigation
-│   │       └───index.tsx
+│   │   └───event-emitter
+│   │       └───index.ts
 │   ├───shared
 │   │   ├───components
+│   │   │   ├───Button
+│   │   │   ├───Tag
 │   │   │   └───text-wrapper
 │   │   ├───constants
 │   │   │   └───index.ts
@@ -68,6 +67,14 @@
 │   │   └───theme
 │   │       ├───fonts.ts
 │   │       └───themes.ts
+│   ├───stores
+│   │   ├───actions
+│   │   │   ├───auth.ts
+│   │   │   ├───si.ts
+│   │   │   └───eapp.ts
+│   │   ├───...
+│   │   ├───hooks.ts
+│   │   └───rootReducers.ts
 │   └───utils
 │       └───index.ts
 ├───.babelrc

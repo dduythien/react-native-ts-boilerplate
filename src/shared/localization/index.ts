@@ -1,16 +1,6 @@
 import LocalizedStrings from "react-native-localization";
 
 export const translations = new LocalizedStrings({
-  "tr-TR": {
-    noLocationService: "Lokasyon Servisi Kapalı",
-    logout: "Çıkış",
-    yes: "Evet",
-    no: "Hayır",
-    cancel: "İptal",
-    areYouSure: "Emin misiniz?",
-    logoutDesc: "Çıkış yapmak üzeresiniz onaylıyor musunuz?",
-    noInternet: "İnternet Bağlantısı Yok",
-  },
   en: {
     noLocationService: "Location Service Not Available",
     logout: "Logout",
@@ -21,7 +11,17 @@ export const translations = new LocalizedStrings({
     logoutDesc: "You are about to log out, confirm?",
     noInternet: "No Internet Connection",
   },
+  vi: {
+    noLocationService: "Không thể sử dụng tính năng này",
+    logout: "Đăng xuất",
+    yes: "Đồng ý",
+    no: "Không",
+    cancel: "Huỷ",
+    areYouSure: "Thông báo",
+    logoutDesc: "Tiến hành đăng xuất?",
+    noInternet: "Không có kết nối internet",
+  },
 });
 
 // ? Set the language manually
-// translations.setLanguage("tr");
+translations.setLanguage("vi");

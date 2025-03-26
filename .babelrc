@@ -1,12 +1,17 @@
 {
   "presets": ["module:metro-react-native-babel-preset"],
-  "overrides": [{
-  "plugins": [
-      ["@babel/plugin-transform-private-methods", {
-        "loose": true
-      }]
-    ]
-  }],
+  "overrides": [
+    {
+      "plugins": [
+        [
+          "@babel/plugin-transform-private-methods",
+          {
+            "loose": true
+          }
+        ]
+      ]
+    }
+  ],
   "plugins": [
     [
       "module-resolver",
@@ -20,7 +25,6 @@
           { "@fonts": "./src/shared/theme/fonts" },
           { "@colors": "./src/shared/theme/colors" },
           { "@theme": "./src/shared/theme" },
-          { "@models": "./src/services/models" },
           { "@services": "./src/services" },
           { "@screens": "./src/screens" },
           { "@utils": "./src/utils/" },

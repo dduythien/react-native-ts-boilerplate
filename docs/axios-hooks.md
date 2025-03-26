@@ -1,6 +1,3 @@
-<img alt="React Native Typescript Boilerplate" src="../assets/logo.png" width="1050"/>
-<img alt="React Native Typescript Boilerplate" src="../assets/axios.png" />
-
 # 🍾 [Axios Hooks](https://github.com/simoneb/axios-hooks) Usage Example
 
 ## Features
@@ -9,23 +6,23 @@
 - Zero configuration, but configurable if needed
 
 ```js
-import useAxios from 'axios-hooks';
-import { View , Text, TouchableOpacity } from "react-native";
+import { Text, TouchableOpacity, View } from "react-native";
+import useAxios from "axios-hooks";
 
 function App() {
   const [{ data, loading, error }, refetch] = useAxios(
-    'https://reqres.in/api/users?delay=1'
-  )
+    "https://reqres.in/api/users?delay=1",
+  );
 
-  if (loading) return <Text>Loading...</Text>
-  if (error) return <Text>Error!</Text>
+  if (loading) return <Text>Loading...</Text>;
+  if (error) return <Text>Error!</Text>;
 
   return (
     <View>
       <TouchableOpacity onPress={refetch}>refetch</TouchableOpacity>
       <Text>{JSON.stringify(data, null, 2)}</Text>
     </View>
-  )
+  );
 }
 ```
 

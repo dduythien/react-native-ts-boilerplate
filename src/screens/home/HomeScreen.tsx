@@ -65,7 +65,7 @@ const HomeScreen: React.FC = () => {
   const renderWelcome = () => (
     <>
       <Text h1 bold color={colors.text}>
-        Hello Kuray
+        Hello
       </Text>
       <Text
         fontFamily={fonts.montserrat.lightItalic}

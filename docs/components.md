@@ -1,5 +1,3 @@
-<img alt="React Native Typescript Boilerplate" src="../assets/logo.png" width="1050"/>
-
 # 🍾 Components
 
 ## Styles
@@ -50,5 +48,5 @@ import theme from "@theme";
 if you want to call them all at once
 
 ```js
-import { theme, fonts, colors, spacing, fontSize } from "@shared-styles/index";
+import { colors, fonts, fontSize, spacing, theme } from "@shared-styles/index";
 ```
